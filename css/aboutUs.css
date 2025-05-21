@@ -1,0 +1,159 @@
+body {
+    margin: 0px;
+    font-family: "Montserrat", sans-serif;
+}
+
+h1,
+h2,
+p {
+    margin: 0px;
+}
+
+a {
+    text-decoration: none;
+}
+
+Header {
+    border-bottom: 2px solid #e5e8eb;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 6rem;
+}
+
+footer {
+    background: #edf0f4;
+    padding: 4rem 6rem;
+    padding-bottom: 8rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer .left {
+    display: flex;
+    gap: 1rem;
+    align-items: left;
+    flex-direction: column;
+}
+
+footer .left a,
+footer .right p {
+    color: #1b417b;
+    text-decoration: none;
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+footer .right {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+Main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 8rem;
+    gap: 4rem;
+    margin-bottom: 4rem;
+}
+
+.jumbotron {
+    position: relative;
+}
+
+.jumbotron .text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 90%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    z-index: 10;
+}
+
+.jumbotron .text h1 {
+    font-size: 7rem;
+    font-weight: 800;
+    margin-bottom: 1rem;
+}
+
+.jumbotron .text p {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.nav {
+    display: flex;
+    gap: 2rem;
+}
+
+.nav a {
+    color: #1b417b;
+    text-decoration: none;
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+
+.news {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: left;
+    gap: 1.5rem;
+    width: 100%;
+}
+
+.team,
+.contact {
+    width: 100%;
+}
+
+.cards {
+    width: 100%;
+    display: flex;
+    gap: 3rem;
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+
+.card {
+    display: flex;
+    width: 350px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    box-shadow: 3px 5px 10px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+}
+
+.card img {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card .text {
+    text-align: left;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    font-size: 1.25rem;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    font-size: 1.25rem;
+}
+
