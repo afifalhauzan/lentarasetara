@@ -1,22 +1,33 @@
 :root {
-  /* Font */
-  --font-primary: 'Montserrat', sans-serif;
+    --font-primary: 'Montserrat', sans-serif;
 
-  --color-primary: #2962b8;
-  --color-primary-100: #cde0fc;
-  --color-primary-200: #9bc1fa;
-  --color-primary-300: #69a2f8;
-  --color-primary-400: #3783f6;
-  --color-primary-500: #2962b8; /* main */
-  --color-primary-600: #1b417b;
-  --color-primary-700: #0d203d;
+    --font-size-montserrat-regular-18: 18px;
+    --font-size-montserrat-regular-20: 20px;
+    --font-size-montserrat-regular-24: 24px;
 
-  --color-secondary: #aa4da8;
-  --color-secondary-100: #f8d9f7;
-  --color-secondary-200: #f1b3f0;
-  --color-secondary-300: #ea8de8;
-  --color-secondary-400: #e367e1;
-  --color-secondary-500: #aa4da8; /* main */
-  --color-secondary-600: #713370;
-  --color-secondary-700: #381938;
+    --font-size-montserrat-medium-20: 20px;
+    --font-size-montserrat-medium-24: 24px;
+    --font-size-montserrat-medium-30: 30px;
+
+    --font-size-montserrat-black-48: 48px;
+    --font-size-montserrat-black-60: 60px;
+    --font-size-montserrat-black-72: 72px;
+
+    --color-primary: #2962b8;
+    --color-primary-100: #cde0fc;
+    --color-primary-200: #9bc1fa;
+    --color-primary-300: #69a2f8;
+    --color-primary-400: #3783f6;
+    --color-primary-500: #2962b8;
+    --color-primary-600: #1b417b;
+    --color-primary-700: #0d203d;
+
+    --color-secondary: #aa4da8;
+    --color-secondary-100: #f8d9f7;
+    --color-secondary-200: #f1b3f0;
+    --color-secondary-300: #ea8de8;
+    --color-secondary-400: #e367e1;
+    --color-secondary-500: #aa4da8;
+    --color-secondary-600: #713370;
+    --color-secondary-700: #381938;
 }

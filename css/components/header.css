@@ -1,0 +1,19 @@
+Header {
+    border-bottom: 2px solid #e5e8eb;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 6rem;
+}
+
+.nav {
+    display: flex;
+    gap: 2rem;
+}
+
+.nav a {
+    color: #1b417b;
+    text-decoration: none;
+    font-size: 1.25rem;
+    font-weight: 700;
+}

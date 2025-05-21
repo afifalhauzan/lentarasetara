@@ -1,0 +1,29 @@
+footer {
+    background: #edf0f4;
+    padding: 4rem 6rem;
+    padding-bottom: 8rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer .left {
+    display: flex;
+    gap: 1rem;
+    align-items: left;
+    flex-direction: column;
+}
+
+footer .left a,
+footer .right p {
+    color: #1b417b;
+    text-decoration: none;
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+footer .right {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
