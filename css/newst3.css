@@ -1,0 +1,44 @@
+main .left {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+}
+
+main .right {
+    width: 30%;
+}
+
+main .right img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+main a {
+    color: #3b82f6;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+main .post-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.left h1 {
+    font-size: 3rem;
+}
+
+.left h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.left P {
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+

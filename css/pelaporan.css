@@ -1,0 +1,105 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f8f8f8;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Container kartu agar tetap rapi dan responsif */
+.cards-container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* Styling untuk setiap card */
+.card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 350px; /* Lebar ditambah agar sesuai dengan contoh */
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    transition: box-shadow 0.3s ease;
+}
+
+/* Hover effect pada card */
+.card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Judul card */
+.card-title {
+    font-size: 1.2em;
+    margin-bottom: 15px;
+    font-weight: 700;
+    text-align: center;
+    color: #333;
+}
+
+/* Bagian info organisasi termasuk logo dan detail */
+.organization-info {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+/* Logo organisasi */
+.logo img {
+    width: 60px;
+    height: 60px;
+    border-radius: 8px;
+    object-fit: cover;
+    margin-right: 15px;
+}
+
+/* Detail kontak (email dan nomor telepon) */
+.details {
+    flex: 1;
+}
+
+.email a {
+    display: inline-block;
+    color: #007bff;
+    text-decoration: none;
+    font-weight: 500;
+    margin-bottom: 8px;
+    word-break: break-all; /* Agar text panjang tidak keluar */
+}
+
+.email a:hover {
+    text-decoration: underline;
+    color: #0056b3;
+}
+
+.phone {
+    margin-top: 5px;
+    color: #555;
+    font-size: 0.95em;
+}
+
+/* Tombol email */
+.actions {
+    margin-top: 20px;
+    text-align: center;
+}
+
+/* Style tombol agar menyerupai gambar kedua */
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #0069d9;
+}
