@@ -4,31 +4,30 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 1.5rem 6rem;
-    position: relative; /* Penting untuk posisi absolut nav mobile */
+    position: relative; 
 }
 
 header .logo {
-    height: 50px; /* Contoh ukuran logo */
+    height: 50px; 
     width: auto;
 }
 
-/* Gaya untuk Navigasi (Default untuk Desktop) */
 .nav {
     display: flex;
     gap: 2rem;
 }
 
 .nav a {
-    color: var(--color-primary-600); /* Menggunakan variabel warna */
+    color: var(--color-primary-600);
     text-decoration: none;
-    font-size: var(--font-size-montserrat-medium-20); /* Menggunakan variabel font */
+    font-size: var(--font-size-montserrat-medium-20); 
     font-weight: 700;
-    padding: 0.5rem 1rem; /* Tambahkan padding agar area klik lebih besar */
-    transition: color 0.3s ease; /* Transisi untuk hover */
+    padding: 0.5rem 1rem; 
+    transition: color 0.3s ease; 
 }
 
 .nav a:hover {
-    color: var(--color-primary-500); /* Efek hover */
+    color: var(--color-primary-500); 
 }
 
 /* MOBILE */
@@ -72,24 +71,23 @@ header .logo {
         top: 100%;
         left: 0;
         width: 100%;
-        background-color: var(--color-primary-100); /* Background menu mobile */
-        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        background-color: var(--color-bg); 
         padding: 1rem 0;
-        z-index: 99; /* Pastikan di bawah hamburger tapi di atas konten */
+        z-index: 99; 
     }
 
-    .nav.active { /* Kelas yang akan ditambahkan oleh JS saat menu dibuka */
-        display: flex; /* Tampilkan menu saat aktif */
+    .nav.active { 
+        display: flex; 
     }
 
     .nav a {
         text-align: center;
         padding: 1rem;
-        border-bottom: 1px solid var(--color-primary-200); /* Garis pemisah antar link */
+        border-bottom: 1px solid var(--color-primary-200); 
     }
 
     .nav a:last-child {
-        border-bottom: none; /* Hilangkan garis di link terakhir */
+        border-bottom: none;
     }
 
     .hamburger-menu.active .bar:nth-child(1) {
