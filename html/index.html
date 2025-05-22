@@ -8,7 +8,8 @@
     <link rel="stylesheet" href="../css/global.css">
     <link rel="stylesheet" href="../css/components/footer.css">
     <link rel="stylesheet" href="../css/components/header.css">
-    
+    <script src="../js/script.js"></script>
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;900&display=swap" rel="stylesheet">
@@ -17,18 +18,24 @@
 
 <body>
     <header>
-        <a href="./">
-            <img src="../img/logo.png" alt="logo">
+        <a href="#">
+            <img src="../img/logo.png" alt="logo" class="logo">
         </a>
-        <div class="nav">
-            <a href="./">Homepage</a>
+
+        <button class="hamburger-menu" aria-label="Toggle navigation">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </button>
+
+        <nav class="nav" id="mainNav"> <a href="./">Homepage</a>
             <a href="./materi.html">Materi</a>
             <a href="./pelaporan.html">Pelaporan</a>
             <a href="./aboutUs.html">Tentang Kami</a>
-        </div>
+        </nav>
     </header>
     <main>
-        <section class="jumbotron">
+        <section class="jumbotron-berita">
             <img src="../img/Understand.jpg" alt>
             <div>
                 <h1>Kesetaraan Gender</h1>
@@ -37,8 +44,11 @@
                     perempuan dan laki-laki keterampilan yang mereka
                     butuhkan untuk berkembang dan berkontribusi bagi
                     masyarakat.</p>
-                <button><a href="./materi.html">Jelajahi
-                        Sekarang</a></button>
+                <button>
+                    <a href="./materi.html">Jelajahi
+                        Sekarang
+                    </a>
+                </button>
             </div>
         </section>
 
@@ -116,8 +126,10 @@
     <footer>
         <div class="left">
             <img src="../img/logo.png" alt="logo">
-            <a href="./aboutUs.html">Tentang Kami</a>
-            <a href="./aboutUs.html">Ketentuan</a>
+            <div class="left-text">
+                <a href="./">Homepage</a>
+                <a href="./aboutUs.html">Tentang Kami</a>
+            </div>
         </div>
         <div class="right">
             <div style="display: flex; gap: 1rem; justify-content: right;">

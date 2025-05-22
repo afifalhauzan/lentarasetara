@@ -1,18 +1,18 @@
 
-.jumbotron {
+.jumbotron-berita {
     position: relative;
     width: 100%;
     height: 800px;
 }
 
-.jumbotron img {
+.jumbotron-berita img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     border-radius: 1.5rem;
 }
 
-.jumbotron div {
+.jumbotron-berita div {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -26,11 +26,11 @@
     font-size: 3rem;
 }
 
-.jumbotron h1 {
+.jumbotron-berita h1 {
     margin: 1rem 0;
 }
 
-.jumbotron p {
+.jumbotron-berita p {
     font-size: 2rem;
     margin: 1rem 0;
     font-weight: 500;

@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="../css/global.css">
     <link rel="stylesheet" href="../css/components/footer.css">
     <link rel="stylesheet" href="../css/components/header.css">
+    <script src="../js/script.js"></script>
+
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,16 +18,22 @@
 </head>
 
 <body>
-   <header>
-        <a href="./">
-            <img src="../img/logo.png" alt="logo">
+    <header>
+        <a href="#">
+            <img src="../img/logo.png" alt="logo" class="logo">
         </a>
-        <div class="nav">
-            <a href="./">Homepage</a>
+
+        <button class="hamburger-menu" aria-label="Toggle navigation">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </button>
+
+        <nav class="nav" id="mainNav"> <a href="./">Homepage</a>
             <a href="./materi.html">Materi</a>
             <a href="./pelaporan.html">Pelaporan</a>
             <a href="./aboutUs.html">Tentang Kami</a>
-        </div>
+        </nav>
     </header>
     <main>
         <section class="jumbotron">
@@ -40,7 +48,7 @@
             <h1 style="font-size: 3rem; font-weight: 800;">Tim Kami</h1>
             <div class="cards">
                 <div class="card">
-                    <img src="../img/VitoManjiro.png" alt="">
+                    <img src="../img/vito.jpeg" alt="">
                     <div class="text">
                         <h1>Alvito Aldi</h1>
                         <p>Project Manager</p>
@@ -48,28 +56,29 @@
                     </div>
                 </div>
                 <div class="card">
-                    <img src="../img/VitoManjiro.png" alt="">
+                    <img src="../img/apip.jpg" alt="">
                     <div class="text">
                         <h1>Afif</h1>
-                        <p>UI/UX Designer</p>
+                        <p>UI Designer</p>
+                        <p>Frontend Developer</p>
                     </div>
                 </div>
                 <div class="card">
-                    <img src="../img/VitoManjiro.png" alt="">
+                    <img src="../img/lana.jpeg" alt="">
                     <div class="text">
                         <h1>Maulana</h1>
                         <p>Content Researcher</p>
                     </div>
                 </div>
                 <div class="card">
-                    <img src="../img/VitoManjiro.png" alt="">
+                    <img src="../img/agiel.jpeg" alt="">
                     <div class="text">
                         <h1>Agiel</h1>
-                        <p></p>
+                        <p>Content Researcher</p>
                     </div>
                 </div>
                 <div class="card">
-                    <img src="../img/VitoManjiro.png" alt="">
+                    <img src="../img/mirza.jpeg" alt="">
                     <div class="text">
                         <h1>Mirza</h1>
                         <p>Content Researcher</p>
@@ -90,8 +99,10 @@
     <footer>
         <div class="left">
             <img src="../img/logo.png" alt="logo">
-            <a href="./aboutUs.html">Tentang Kami</a>
-            <a href="./aboutUs.html">Ketentuan</a>
+            <div class="left-text">
+                <a href="./">Homepage</a>
+                <a href="./aboutUs.html">Tentang Kami</a>
+            </div>
         </div>
         <div class="right">
             <div style="display: flex; gap: 1rem; justify-content: right;">

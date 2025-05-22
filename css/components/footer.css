@@ -9,6 +9,13 @@ footer {
 
 footer .left {
     display: flex;
+    gap: rem;
+    align-items: left;
+    flex-direction: column;
+}
+
+footer .left-text {
+    display: flex;
     gap: 1rem;
     align-items: left;
     flex-direction: column;
