@@ -26,18 +26,26 @@
 
 .card {
     border-radius: 1rem;
-    width: 30%;
+    width: 30%; /* Tetap menggunakan persentase untuk flexibilitas awal */
+    max-width: 400px; /* Tambahkan ini untuk membatasi lebar maksimal card */
+    min-width: 280px; /* Opsional: Tambahkan ini untuk memastikan card tidak terlalu kecil di layar sempit */
     display: flex;
     flex-direction: column;
-    align-items: left;
-    justify-content: left;
+    align-items: flex-start; /* Mengubah ini dari 'left' ke 'flex-start' karena 'left' tidak valid di align-items */
+    justify-content: flex-start; /* Mengubah ini dari 'left' ke 'flex-start' */
     box-shadow: 3px 5px 10px rgba(0, 0, 0, 0.1);
+    /* Tambahkan padding agar konten tidak menempel ke tepi card */
+    padding-bottom: 2rem; /* atau padding: 1rem; jika Anda ingin semua sisi */
+    overflow: hidden; /* Penting untuk menjaga border-radius img di dalam card */
 }
 
 .card img {
-    border-radius: 1rem 1rem 0px 0px;
-    height: 50%;
-    object-fit: cover;
+    border-radius: 1rem 1rem 0px 0px; /* Radius hanya di sudut atas */
+    width: 100%; /* Pastikan gambar mengambil lebar penuh dari card */
+    height: 200px; /* Atur tinggi gambar secara eksplisit */
+    /* Atau min-height / max-height, tergantung kebutuhan desain Anda */
+    object-fit: cover; /* Penting untuk memastikan gambar tidak terdistorsi */
+    display: block; /* Menghilangkan spasi ekstra di bawah gambar */
 }
 
 .card-text {
