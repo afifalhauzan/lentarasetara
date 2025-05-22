@@ -17,15 +17,20 @@
 
 <body>
     <header>
-        <a href="./">
-            <img src="../img/logo.png" alt="logo">
+        <a href="#">
+            <img src="../img/logo.png" alt="logo" class="logo">
         </a>
-        <div class="nav">
-            <a href="./">Homepage</a>
+
+        <button class="hamburger-menu" aria-label="Toggle navigation">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </button>
+
+        <nav class="nav" id="mainNav"> <a href="#">Homepage</a>
             <a href="./materi.html">Materi</a>
-            <a href="./pelaporan.html">Pelaporan</a>
             <a href="./aboutUs.html">Tentang Kami</a>
-        </div>
+        </nav>
     </header>
 
     <main>
@@ -35,8 +40,10 @@
     <footer>
         <div class="left">
             <img src="../img/logo.png" alt="logo">
-            <a href="./aboutUs.html">Tentang Kami</a>
-            <a href="./aboutUs.html">Ketentuan</a>
+            <div class="left-text">
+                <a href="./">Homepage</a>
+                <a href="./aboutUs.html">Tentang Kami</a>
+            </div>
         </div>
         <div class="right">
             <div style="display: flex; gap: 1rem; justify-content: right;">

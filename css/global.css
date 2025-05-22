@@ -77,3 +77,31 @@ Main {
     padding: 2rem 8rem;
     gap: 4rem;
 }
+
+.jumbotron {
+    position: relative;
+}
+
+.jumbotron .text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 90%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    z-index: 10;
+}
+
+.jumbotron .text h1 {
+    font-size: 7rem;
+    font-weight: 800;
+    margin-bottom: 1rem;
+}
+
+.jumbotron .text p {
+    font-size: 2rem;
+    font-weight: 600;
+}
