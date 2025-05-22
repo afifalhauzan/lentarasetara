@@ -85,8 +85,9 @@
 /* Style tombol agar menyerupai gambar kedua */
 .button {
     display: inline-block;
+    width: 85%;
     padding: 10px 20px;
-    background-color: #007bff;
+    background-color: var(--color-primary-500);
     color: #fff;
     border-radius: 4px;
     text-decoration: none;
@@ -96,4 +97,15 @@
 
 .button:hover {
     background-color: #0069d9;
+}
+
+.actions .button .fas { /* Menargetkan ikon di dalam tombol */
+    margin-right: 8px; /* Memberikan spasi 8px di sebelah kanan ikon */
+}
+
+/* Jika Anda ingin ikon dan teks tetap di tengah tombol */
+.actions .button {
+    display: inline-flex; /* Menggunakan flexbox untuk penataan ikon dan teks */
+    align-items: center; /* Memusatkan ikon dan teks secara vertikal */
+    justify-content: center; /* Memusatkan ikon dan teks secara horizontal */
 }
