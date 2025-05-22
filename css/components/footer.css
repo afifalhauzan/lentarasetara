@@ -9,7 +9,7 @@ footer {
 
 footer .left {
     display: flex;
-    gap: rem;
+    gap: 2rem;
     align-items: left;
     flex-direction: column;
 }
