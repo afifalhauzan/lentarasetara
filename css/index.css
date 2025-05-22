@@ -195,8 +195,6 @@
     width: 90%;
     transform: translate(-50%, -50%);
     color: white;
-    font-weight: bold;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
     text-align: left;
     z-index: 10;
 }
@@ -212,7 +210,14 @@
     font-weight: 800;
 }
 
-.visi li {
-    font-size: 2rem;
-    font-weight: 500;
+.visi p{
+    font-size: var(--font-size-montserrat-regular-20);
+    font-weight: 200;
+}
+
+.text-quote {
+    font-size: var(--font-size-montserrat-medium-30);
+    font-weight: 700;
+    color: var(--color-primary-600);
+    padding: 2rem 2rem;
 }

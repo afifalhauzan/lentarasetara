@@ -41,10 +41,12 @@ body {
 
 h1, h2, p {
     margin: 0px;
+    letter-spacing: 0.03rem;
 }
 
 a {
     text-decoration: none;
+    letter-spacing: 0.04rem;
 }
 
 button {
