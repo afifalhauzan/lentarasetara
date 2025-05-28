@@ -1,34 +1,57 @@
-.news {
+section {
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: left;
-    gap: 1.5rem;
-    width: 100%;
+    justify-content: center;
+    padding: 1.5rem;
+    /* Top and bottom padding */
 }
+
 
 .team,
 .contact {
     width: 100%;
+    gap: 2rem;
 }
 
+.contact {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    font-size: 1.25rem;
+    margin-bottom: 2rem;
+}
+
+/* --- Cards Container (Default Padding) --- */
 .cards {
     width: 100%;
     display: flex;
     gap: 3rem;
     flex-wrap: wrap;
+    justify-content: center;
     align-content: flex-start;
+    padding: 0 4rem;
+    /* Default padding for larger screens */
+    box-sizing: border-box;
+    /* Include padding in the width calculation */
 }
 
+/* --- Individual Card (Internal Padding) --- */
 .card {
     display: flex;
-    width: 200px;
+    flex-basis: 200px;
+    min-width: 200px;
+    flex-grow: 1;
+    max-width: calc(33.33% - 2rem);
     flex-direction: column;
     align-items: center;
     justify-content: center;
     gap: 1rem;
-    box-shadow: 3px 5px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     padding: 2rem;
+    transition: box-shadow 0.3s ease;
+    box-sizing: border-box;
 }
 
 .card img {
@@ -47,10 +70,55 @@
     font-size: 16px;
 }
 
-.contact {
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
-    font-size: 1.25rem;
+.card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
+@media (max-width: 768px) {
+
+    .team,
+    .contact {
+        width: 80%;
+    }
+
+    .cards {
+        gap: 1.5rem;
+        padding: 0 1rem;
+        /* More padding for smaller screens as main has 0 */
+    }
+
+    .card {
+        flex-basis: 280px;
+        min-width: 280px;
+        max-width: 100%;
+        /* Single card per row */
+        padding: 1.5rem;
+        /* Reduced internal padding */
+    }
+}
+
+@media (max-width: 480px) {
+    .cards {
+        gap: 1rem;
+        padding: 0 0.5rem;
+        /* Minimal padding for very small screens */
+    }
+
+    .card {
+        width: 100%;
+        flex-basis: auto;
+        min-width: unset;
+        max-width: 100%;
+        padding: 1rem;
+        /* Further reduced internal padding */
+    }
+
+    .card img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .card .text {
+        font-size: 14px;
+    }
+}

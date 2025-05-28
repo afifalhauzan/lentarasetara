@@ -1,31 +1,28 @@
-
-/* Container kartu agar tetap rapi dan responsif */
 .cards-container {
     display: flex;
     gap: 20px;
+    padding: 0rem 0rem 3rem 0rem;
     flex-wrap: wrap;
     justify-content: center;
 }
 
-/* Styling untuk setiap card */
 .card {
     background-color: #fff;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    width: 350px; /* Lebar ditambah agar sesuai dengan contoh */
+    width: 350px;
     padding: 20px;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
     transition: box-shadow 0.3s ease;
+    justify-content: space-between;
 }
 
-/* Hover effect pada card */
 .card:hover {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
-/* Judul card */
 .card-title {
     font-size: 1.2em;
     margin-bottom: 15px;
@@ -34,7 +31,6 @@
     color: #333;
 }
 
-/* Bagian info organisasi termasuk logo dan detail */
 .organization-info {
     display: flex;
     align-items: center;
@@ -42,7 +38,6 @@
     margin-bottom: 15px;
 }
 
-/* Logo organisasi */
 .logo img {
     width: 60px;
     height: 60px;
@@ -51,7 +46,6 @@
     margin-right: 15px;
 }
 
-/* Detail kontak (email dan nomor telepon) */
 .details {
     flex: 1;
 }
@@ -62,7 +56,7 @@
     text-decoration: none;
     font-weight: 500;
     margin-bottom: 8px;
-    word-break: break-all; /* Agar text panjang tidak keluar */
+    word-break: break-all; 
 }
 
 .email a:hover {
@@ -76,13 +70,11 @@
     font-size: 0.95em;
 }
 
-/* Tombol email */
 .actions {
     margin-top: 20px;
     text-align: center;
 }
 
-/* Style tombol agar menyerupai gambar kedua */
 .button {
     display: inline-block;
     width: 85%;
@@ -99,13 +91,12 @@
     background-color: #0069d9;
 }
 
-.actions .button .fas { /* Menargetkan ikon di dalam tombol */
-    margin-right: 8px; /* Memberikan spasi 8px di sebelah kanan ikon */
+.actions .button .fas { 
+    margin-right: 8px; 
 }
 
-/* Jika Anda ingin ikon dan teks tetap di tengah tombol */
 .actions .button {
-    display: inline-flex; /* Menggunakan flexbox untuk penataan ikon dan teks */
-    align-items: center; /* Memusatkan ikon dan teks secara vertikal */
-    justify-content: center; /* Memusatkan ikon dan teks secara horizontal */
+    display: inline-flex;
+    align-items: center; 
+    justify-content: center;
 }

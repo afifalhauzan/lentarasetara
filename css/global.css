@@ -93,7 +93,7 @@ Main {
     align-items: center;
     justify-content: center;
     padding: 0rem 8rem;
-    gap: 4rem;
+    gap: 3rem;
 }
 
 @media (max-width: 768px) {
@@ -104,10 +104,9 @@ Main {
     
 }
 
-
 .jumbotron {
     position: relative;
-    width: 150%;
+    width: 130%;
     height: 300px; 
     min-height: 200px; 
     display: flex;
