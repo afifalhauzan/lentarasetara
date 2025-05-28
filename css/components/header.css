@@ -4,11 +4,14 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 1.5rem 4rem;
-    position: relative; 
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background-color: #FFFFFF;
 }
 
 header .logo {
-    height: 40px; 
+    height: 40px;
     width: auto;
 }
 
@@ -20,14 +23,14 @@ header .logo {
 .nav a {
     color: var(--color-primary-600);
     text-decoration: none;
-    font-size: var(--font-size-montserrat-regular-18); 
+    font-size: var(--font-size-montserrat-regular-18);
     font-weight: 600;
-    padding: 0.5rem 0.5rem; 
-    transition: color 0.3s ease; 
+    padding: 0.5rem 0.5rem;
+    transition: color 0.3s ease;
 }
 
 .nav a:hover {
-    color: var(--color-primary-500); 
+    color: var(--color-primary-500);
 }
 
 /* MOBILE */
@@ -39,7 +42,7 @@ header .logo {
     border: none;
     cursor: pointer;
     padding: 0.5rem;
-    z-index: 100; 
+    z-index: 100;
 }
 
 .hamburger-menu .bar {
@@ -51,9 +54,16 @@ header .logo {
     transition: 0.4s;
 }
 
-@media (max-width: 768px) { 
+@media (max-width: 768px) {
     header {
-        padding: 1rem 2rem; 
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 2rem;
+        position: sticky;
+        top: 0;
+        z-index: 100;
+        background-color: #FFFFFF;
     }
 
     header .logo {
@@ -64,26 +74,31 @@ header .logo {
         display: block;
     }
 
+    .hamburger-menu:hover {
+        background-color: transparent;
+    }
+
     .nav {
         display: none;
-        flex-direction: column; 
+        flex-direction: column;
         position: absolute;
         top: 100%;
         left: 0;
         width: 100%;
-        background-color: var(--color-bg); 
-        padding: 1rem 0;
-        z-index: 99; 
+        background-color: var(--color-bg);
+        z-index: 99;
+        gap: 0rem;
     }
 
-    .nav.active { 
-        display: flex; 
+    .nav.active {
+        display: flex;
     }
 
     .nav a {
         text-align: center;
         padding: 1rem;
-        border-bottom: 1px solid var(--color-primary-200); 
+        border-bottom: 1px solid var(--color-primary-200);
+        background-color: #e5e8eb;
     }
 
     .nav a:last-child {
