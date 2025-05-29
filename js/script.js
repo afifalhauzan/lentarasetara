@@ -32,4 +32,4 @@ function moveSlide(direction) {
 
 setInterval(() => {
   moveSlide(1);
-}, 3000);
+}, 5000);
