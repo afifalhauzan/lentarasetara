@@ -23,25 +23,21 @@ section {
     margin-bottom: 2rem;
 }
 
-/* --- Cards Container (Default Padding) --- */
 .cards {
     width: 100%;
     display: flex;
-    gap: 3rem;
+    gap: 1.5rem;
     flex-wrap: wrap;
     justify-content: center;
     align-content: flex-start;
-    padding: 0 4rem;
-    /* Default padding for larger screens */
+    padding: 0 1rem;
     box-sizing: border-box;
-    /* Include padding in the width calculation */
 }
 
-/* --- Individual Card (Internal Padding) --- */
 .card {
     display: flex;
     flex-basis: 200px;
-    min-width: 200px;
+    min-width: 100px;
     flex-grow: 1;
     max-width: calc(33.33% - 2rem);
     flex-direction: column;
@@ -49,15 +45,15 @@ section {
     justify-content: center;
     gap: 1rem;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 2rem;
+    padding: 1.5rem;
     transition: box-shadow 0.3s ease;
     box-sizing: border-box;
 }
 
 .card img {
     border-radius: 50%;
-    width: 100px;
-    height: 100px;
+    width: 140px;
+    height: 140px;
     object-fit: cover;
 }
 
@@ -72,6 +68,261 @@ section {
 
 .card:hover {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.logo-section {
+    padding: 3rem;
+    /* Internal padding for the section */
+    background-color: var(--color-white);
+    border-radius: 8px;
+    text-align: center;
+    /* Center the h1 */
+}
+
+.logo-section h1 {
+    font-size: var(--font-size-montserrat-medium-24);
+    margin-bottom: 2rem;
+}
+
+.logo-grid-container {
+    display: grid;
+    justify-content: center; 
+    justify-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 2rem;
+    overflow: hidden;
+    margin-bottom: 2rem;
+    /* Space below the grid */
+}
+
+.logo-card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    padding: 2rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    border-bottom: 1px solid var(--color-bg);
+    /* Horizontal dividers */
+    border-top: 1px solid var(--color-bg);
+    /* Horizontal dividers */
+    transition: box-shadow 0.3s ease, background-color 0.3s ease, transform 0.3s ease;
+    /* Added transform transition */
+}
+
+.logo-card:hover {
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+    /* More intense box-shadow */
+    transform: translateY(-5px) scale(1.02);
+    /* Little lift and slight scale */
+}
+
+/* Card 1: LentaraSetara (Blue icon) */
+.logo-grid-container .logo-card:nth-child(1):hover {
+    background-color: rgba(59, 130, 246, 0.1);
+    /* Light Blue */
+}
+
+/* Card 2: Lampu (Red icon) */
+.logo-grid-container .logo-card:nth-child(2):hover {
+    background-color: rgb(252, 239, 251);
+    /* Light Red */
+}
+
+/* Card 3: Setara (Blue icon) */
+.logo-grid-container .logo-card:nth-child(3):hover {
+    background-color: rgba(59, 130, 246, 0.15);
+    /* Slightly darker Light Blue */
+}
+
+/* Card 4: Panah Ke Atas Kanan (Red/Pink icon) */
+.logo-grid-container .logo-card:nth-child(4):hover {
+    background-color: rgb(252, 239, 251)
+        /* Slightly darker Light Red */
+}
+
+/* Card 5: Gender (Orange icon - this is your full-width card) */
+.logo-grid-container .logo-card:nth-child(5):hover {
+    background-color: rgba(255, 111, 0, 0.1);
+    /* Light Orange */
+}
+
+/* Remove border-right for cards that are the last in their row */
+.logo-grid-container .logo-card:nth-child(2n) {
+    /* Every second card (2, 4) */
+    border-right: none;
+}
+
+/* Remove border-bottom for the last row of cards */
+.logo-grid-container .logo-card:nth-last-child(-n + 2) {
+    /* Last 2 cards (or 1 if odd) */
+    border-bottom: none;
+}
+
+/* Specific adjustment for the full-width Gender card */
+.logo-card.full-width-card {
+    grid-column: 1 / -1;
+    /* Spans all columns */
+    border-right: none;
+    /* No right border if it's full width */
+    text-align: center;
+    /* Center content for the full-width card */
+    align-items: center;
+    /* Center items for the full-width card */
+}
+
+
+.logo-icon-wrapper {
+    background-color: var(--color-white);
+    /* Light background for icon circle */
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    /* Padding inside the circle for icon */
+}
+
+.logo-icon-wrapper img {
+    width: 60px;
+    /* Adjust SVG size */
+    height: 60px;
+}
+
+.logo-card h2 {
+    font-size: var(--font-size-montserrat-medium-20);
+    color: var(--color-primary-blue);
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+}
+
+.logo-card p {
+    font-size: var(--font-size-montserrat-regular-16);
+    margin: 0;
+    /* Remove default paragraph margin */
+}
+
+
+/* --- Conclusion Section --- */
+.logo-conclusion-section {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1.5rem;
+    margin-top: 3rem;
+}
+
+.large-logo-icon {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.large-logo-icon img {
+    width: 150px;
+    height: 150px;
+}
+
+.logo-conclusion-section p {
+    margin-left: 30px;
+    font-size: var(--font-size-montserrat-regular-18);
+    max-width: 600px;
+    text-align: left;
+}
+
+@media (max-width: 768px) {
+    .logo-section {
+        padding: 1rem;
+        margin: 1rem;
+        /* Adjust margin if you want content closer to screen edge */
+    }
+
+    .logo-section h1 {
+        font-size: var(--font-size-montserrat-medium-24);
+        margin-bottom: 1rem;
+    }
+
+    .logo-grid-container {
+        grid-template-columns: 1fr;
+        margin-bottom: 1rem;
+        padding: 0.5rem;
+        /* This provides padding within the grid container */
+        transition: none;
+        width: 100%;
+        border: none;
+        /* Remove overall grid container border if it looks bad */
+        border-radius: 0;
+        /* Remove overall grid container border-radius if border removed */
+    }
+
+    .logo-conclusion-section {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .logo-card {
+        transition: none;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transform: none;
+        padding: 1rem;
+        border-right: none;
+        min-width: unset;
+        border-bottom: 1px solid var(--color-border-light);
+    }
+
+    .logo-card:last-child {
+        border-bottom: none;
+    }
+
+    .logo-card.full-width-card {
+        text-align: left;
+        align-items: flex-start;
+    }
+
+    .logo-icon-wrapper {
+        width: 50px;
+        height: 50px;
+        margin-bottom: 0.8rem;
+    }
+
+    .logo-icon-wrapper svg {
+        width: 30px;
+        height: 30px;
+    }
+
+    .logo-card h2 {
+        font-size: var(--font-size-montserrat-medium-20);
+    }
+
+    .logo-card p {
+        font-size: var(--font-size-montserrat-regular-16);
+    }
+
+    .large-logo-icon {
+        width: 80px;
+        height: 80px;
+    }
+
+    .large-logo-icon svg {
+        width: 50px;
+        height: 50px;
+    }
+
+    .logo-conclusion-section p {
+        font-size: var(--font-size-montserrat-regular-16);
+        padding: 0 0.5rem;
+        /* Provides text padding from the edges */
+    }
 }
 
 @media (max-width: 768px) {
@@ -94,31 +345,5 @@ section {
         /* Single card per row */
         padding: 1.5rem;
         /* Reduced internal padding */
-    }
-}
-
-@media (max-width: 480px) {
-    .cards {
-        gap: 1rem;
-        padding: 0 0.5rem;
-        /* Minimal padding for very small screens */
-    }
-
-    .card {
-        width: 100%;
-        flex-basis: auto;
-        min-width: unset;
-        max-width: 100%;
-        padding: 1rem;
-        /* Further reduced internal padding */
-    }
-
-    .card img {
-        width: 80px;
-        height: 80px;
-    }
-
-    .card .text {
-        font-size: 14px;
     }
 }
