@@ -1,237 +1,229 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;900&display=swap"
-      rel="stylesheet"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="stylesheet" href="../css/global.css" />
-    <link rel="stylesheet" href="../css/components/header.css" />
-    <link rel="stylesheet" href="../css/components/footer.css" />
-    <link rel="stylesheet" href="../css/index.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;900&display=swap" rel="stylesheet" />
 
-    <script src="../js/script.js"></script>
+  <link rel="stylesheet" href="../css/global.css" />
+  <link rel="stylesheet" href="../css/components/header.css" />
+  <link rel="stylesheet" href="../css/components/footer.css" />
+  <link rel="stylesheet" href="../css/index.css" />
 
-    <title>Homepage</title>
-  </head>
+  <script src="../js/script.js"></script>
 
-  <body>
-    <header>
-      <a href="#">
-        <img src="../img/logo.png" alt="logo" class="logo" />
-      </a>
+  <title>Homepage</title>
+</head>
 
-      <button class="hamburger-menu" aria-label="Toggle navigation">
-        <span class="bar"></span>
-        <span class="bar"></span>
-        <span class="bar"></span>
-      </button>
+<body>
+  <header>
+    <a href="#">
+      <img src="../img/logo.png" alt="logo" class="logo" />
+    </a>
 
-      <nav class="nav" id="mainNav">
-        <a href="./">Homepage</a>
-        <a href="./materi.html">Materi</a>
-        <a href="./pelaporan.html">Pelaporan</a>
-        <a href="./aboutUs.html">Tentang Kami</a>
-      </nav>
-    </header>
-    <main>
-      <div class="carousel">
-        <div class="carousel-inner">
-            <section class="jumbotron-berita">
-                <img src="../img/Materi.png" alt="Materi">
-                <div>
-                    <h1>Kesetaraan Gender</h1>
-                    <p>Pendidikan yang bermutu merupakan dasar bagi kesetaraan
-                        gender. Pendidikan yang bermutu memberikan anak
-                        perempuan dan laki-laki keterampilan yang mereka
-                        butuhkan untuk berkembang dan berkontribusi bagi
-                        masyarakat.</p>
-                    <a href="./materi.html" class="news-link">
-                        Buka Berita
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                            class="feather feather-arrow-right">
-                            <line x1="5" y1="12" x2="19" y2="12"></line>
-                            <polyline points="12 5 19 12 12 19"></polyline>
-                        </svg>
-                    </a>
-                </div>
-            </section>
-            <section class="jumbotron-berita">
-                <img src="../img/berita1.png" alt="Materi">
-                <div>
-                    <h1>Hak asasi bagi Pria</h1>
-                    <p>Pendidikan yang bermutu merupakan dasar bagi kesetaraan
-                        gender. Pendidikan yang bermutu memberikan anak
-                        perempuan dan laki-laki keterampilan yang mereka
-                        butuhkan untuk berkembang dan berkontribusi bagi
-                        masyarakat.</p>
-                    <a href="./materi.html" class="news-link">
-                        Buka Berita
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                            class="feather feather-arrow-right">
-                            <line x1="5" y1="12" x2="19" y2="12"></line>
-                            <polyline points="12 5 19 12 12 19"></polyline>
-                        </svg>
-                    </a>
-                </div>
-            </section>
-            <section class="jumbotron-berita">
-                <img src="../img/berita2.png" alt="Materi">
-                <div>
-                    <h1>Kasihani Pria</h1>
-                    <p>Pendidikan yang bermutu merupakan dasar bagi kesetaraan
-                        gender. Pendidikan yang bermutu memberikan anak
-                        perempuan dan laki-laki keterampilan yang mereka
-                        butuhkan untuk berkembang dan berkontribusi bagi
-                        masyarakat.</p>
-                    <a href="./materi.html" class="news-link">
-                        Buka Berita
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                            class="feather feather-arrow-right">
-                            <line x1="5" y1="12" x2="19" y2="12"></line>
-                            <polyline points="12 5 19 12 12 19"></polyline>
-                        </svg>
-                    </a>
-                </div>
-            </section>
-        </div>
-        <button class="carousel-control left" onclick="moveSlide(-1)"><</button>
-        <button class="carousel-control right" onclick="moveSlide(1)">></button>
+    <button class="hamburger-menu" aria-label="Toggle navigation">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </button>
+
+    <nav class="nav" id="mainNav">
+      <a href="./">Homepage</a>
+      <a href="./materi.html">Materi</a>
+      <a href="./pelaporan.html">Pelaporan</a>
+      <a href="./aboutUs.html">Tentang Kami</a>
+    </nav>
+  </header>
+  <main>
+    <div class="carousel">
+      <div class="carousel-inner">
+        <section class="jumbotron-berita">
+          <img src="../img/Materi.png" alt="Materi">
+          <div>
+            <h1>Kesetaraan Gender</h1>
+            <p>Pendidikan yang bermutu merupakan dasar bagi kesetaraan
+              gender. Pendidikan yang bermutu memberikan anak
+              perempuan dan laki-laki keterampilan yang mereka
+              butuhkan untuk berkembang dan berkontribusi bagi
+              masyarakat.</p>
+            <a href="./materi.html" class="news-link">
+              Buka Berita
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="feather feather-arrow-right">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </a>
+          </div>
+        </section>
+        <section class="jumbotron-berita">
+          <img src="../img/berita1.png" alt="Materi">
+          <div>
+            <h1>Hak asasi bagi Pria</h1>
+            <p>Pendidikan yang bermutu merupakan dasar bagi kesetaraan
+              gender. Pendidikan yang bermutu memberikan anak
+              perempuan dan laki-laki keterampilan yang mereka
+              butuhkan untuk berkembang dan berkontribusi bagi
+              masyarakat.</p>
+            <a href="./materi.html" class="news-link">
+              Buka Berita
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="feather feather-arrow-right">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </a>
+          </div>
+        </section>
+        <section class="jumbotron-berita">
+          <img src="../img/berita2.png" alt="Materi">
+          <div>
+            <h1>Kasihani Pria</h1>
+            <p>Pendidikan yang bermutu merupakan dasar bagi kesetaraan
+              gender. Pendidikan yang bermutu memberikan anak
+              perempuan dan laki-laki keterampilan yang mereka
+              butuhkan untuk berkembang dan berkontribusi bagi
+              masyarakat.</p>
+            <a href="./materi.html" class="news-link">
+              Buka Berita
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="feather feather-arrow-right">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </a>
+          </div>
+        </section>
+      </div>
+      <button class="carousel-control left" onclick="moveSlide(-1)"><</button>
+      <button class="carousel-control right" onclick="moveSlide(1)">></button>
     </div>
 
-      <section class="news">
-        <h1>Berita Terkini</h1>
-        <p>Berita Fresh mengenai kesetaraan gender</p>
-        <div class="cards">
-          <div class="card">
-            <img src="../img/berita1.png" alt />
-            <div class="card-text">
-              <h2>
-                Kaum Perempuan Masih Mengalami Diskriminasi dan Kesenjangan
-                Karir di Lingkungan Kerja
-              </h2>
-              <p>
-                Kaum perempuan masih mengalami diskriminasi dan kesenjangan gaji
-                dan karir di lingkungan kerja. Belum lagi mereka rawan kena
-                pelecehan dan kekerasan seksual.
-              </p>
-              <a
-                href="https://ugm.ac.id/id/berita/kaum-perempuan-masih-mengalami-diskriminasi-dan-kesenjangan-karir-di-lingkungan-kerja/"
-                >Pelajari &rarr;</a
-              >
-            </div>
-          </div>
-          <div class="card">
-            <img src="../img/berita2.png" alt />
-            <div class="card-text">
-              <h2>
-                INDONESIA WUJUDKAN LANGKAH NYATA UPAYA PERLINDUNGAN HAK
-                PEREMPUAN
-              </h2>
-              <p>
-                Perlindungan hak perempuan diberikan melalui perhatian nyata,
-                konsisten dan sistematik, yang ditujukan untuk mewujudkan
-                kesetaraan gender.
-              </p>
-              <a href="https://www.kemenpppa.go.id/page/view/MTczMQ=="
-                >Pelajari &rarr;</a
-              >
-            </div>
-          </div>
-          <div class="card">
-            <img src="../img/berita3.png" alt />
-            <div class="card-text">
-              <h2>
-                Siaran Pers Komnas Perempuan Peluncuran Kampanye 16 Hari Anti
-                Kekerasan terhadap Perempuan 2024
-              </h2>
-              <p>
-                Dalam rangka Kampanye 16 Hari Anti Kekerasan terhadap Perempuan
-                (16HAKTP) yang dimulai 25 November hingga 10 Desember 2024,
-                Komisi Nasional Anti Kekerasan Terhadap Perempuan (Komnas
-                Perempuan) menyerukan kepada
-              </p>
-              <a
-                href="https://komnasperempuan.go.id/siaran-pers-detail/siaran-pers-komnas-perempuan-peluncuran-kampanye-16-hari-anti-kekerasan-terhadap-perempuan-2024"
-                >Pelajari &rarr;</a
-              >
-            </div>
+    <section class="news">
+      <h1>Berita Terkini</h1>
+      <p>Berita Fresh mengenai kesetaraan gender</p>
+      <div class="cards">
+        <div class="card">
+          <img src="../img/berita1.png" alt />
+          <div class="card-text">
+            <h2>
+              Kaum Perempuan Masih Mengalami Diskriminasi dan Kesenjangan
+              Karir di Lingkungan Kerja
+            </h2>
+            <p>
+              Kaum perempuan masih mengalami diskriminasi dan kesenjangan gaji
+              dan karir di lingkungan kerja. Belum lagi mereka rawan kena
+              pelecehan dan kekerasan seksual.
+            </p>
+            <a
+              href="https://ugm.ac.id/id/berita/kaum-perempuan-masih-mengalami-diskriminasi-dan-kesenjangan-karir-di-lingkungan-kerja/">Pelajari
+              &rarr;</a>
           </div>
         </div>
-      </section>
-
-      <section>
-        <h2 class="text-quote">“Lentera pengetahuan, nyatakan kesetaraan!”</h2>
-      </section>
-
-      <section class="visi">
-        <div class="left">
-          <img src="../img/visi.png" alt />
-          <div class="text">
-            <h1>Visi</h1>
-            <ol>
-              <li>
-                <p>
-                  Mewujudkan edukasi kesetaraan gender yang informatif dan
-                  bermakna
-                </p>
-              </li>
-              <li>
-                <p>
-                  Mensosialisasikan akan pentingnya kesetaraan gender dalam
-                  kehidupan sehari-hari
-                </p>
-              </li>
-            </ol>
+        <div class="card">
+          <img src="../img/berita2.png" alt />
+          <div class="card-text">
+            <h2>
+              INDONESIA WUJUDKAN LANGKAH NYATA UPAYA PERLINDUNGAN HAK
+              PEREMPUAN
+            </h2>
+            <p>
+              Perlindungan hak perempuan diberikan melalui perhatian nyata,
+              konsisten dan sistematik, yang ditujukan untuk mewujudkan
+              kesetaraan gender.
+            </p>
+            <a href="https://www.kemenpppa.go.id/page/view/MTczMQ==">Pelajari &rarr;</a>
           </div>
         </div>
-        <div class="right">
-          <img src="../img/sdgs.png" alt />
-          <div class="text">
-            <div>
-              <h1>SDGs 5</h1>
-              <p style="font-size: 2rem">Kesetaraan Gender</p>
-            </div>
-            <img src="../img/sdg5.png" alt />
+        <div class="card">
+          <img src="../img/berita3.png" alt />
+          <div class="card-text">
+            <h2>
+              Siaran Pers Komnas Perempuan Peluncuran Kampanye 16 Hari Anti
+              Kekerasan terhadap Perempuan 2024
+            </h2>
+            <p>
+              Dalam rangka Kampanye 16 Hari Anti Kekerasan terhadap Perempuan
+              (16HAKTP) yang dimulai 25 November hingga 10 Desember 2024,
+              Komisi Nasional Anti Kekerasan Terhadap Perempuan (Komnas
+              Perempuan) menyerukan kepada
+            </p>
+            <a
+              href="https://komnasperempuan.go.id/siaran-pers-detail/siaran-pers-komnas-perempuan-peluncuran-kampanye-16-hari-anti-kekerasan-terhadap-perempuan-2024">Pelajari
+              &rarr;</a>
           </div>
-        </div>
-      </section>
-
-      <section class="explore">
-        <h1>Mulai Belajar bersama <span>LentaraSetara!</span></h1>
-        <button><a href="./materi.html">Jelajahi Sekarang</a></button>
-      </section>
-    </main>
-    <footer>
-      <div class="left">
-        <img src="../img/logo.png" alt="logo" />
-        <div class="left-text">
-          <a href="./">Homepage</a>
-          <a href="./aboutUs.html">Tentang Kami</a>
         </div>
       </div>
-      <div class="right">
-        <div style="display: flex; gap: 1rem; justify-content: right">
-          <a
-            href="https://www.instagram.com/alvito.aldi/?utm_source=ig_web_button_share_sheet"
-          >
-            <img src="../img/instagram.png" alt />
-          </a>
-          <a href="https://www.youtube.com/watch?v=MOZOtdeiaF0">
-            <img src="../img/youtube.png" alt />
-          </a>
+    </section>
+
+    <section>
+      <h2 class="text-quote">“Lentera pengetahuan, nyatakan kesetaraan!”</h2>
+    </section>
+
+    <section class="vision-mission-sdgs-section">
+      <div class="top-cards-row">
+        <div class="vision-card">
+          <h2>Visi</h2>
+          <p>"Menjadi Lentera yang Menerangi Jalan Menuju Masyarakat Inklusif, di Mana Setiap Individu Berhak Atas
+            Kesetaraan dan Pendidikan Tanpa Batas Gender."</p>
         </div>
-        <p>©2025 <span style="font-weight: 700">LentaraSetara</span></p>
+        <div class="mission-card">
+          <h2>Misi</h2>
+          <ul>
+            <li>Mengegukasi masyarakat melalui kampanye berbasis pengetahuan (lampu) untuk mematahkan stereotip gender.
+            </li>
+            <li>Membantu pemerintah, LSM, dan komunitas untuk memperkuat kebijakan berkeadilan gender.</li>
+          </ul>
+        </div>
       </div>
-    </footer>
-  </body>
+
+      <div class="sdgs-card">
+        <div class="sdgs-text-content">
+          <h2>SDGs 5</h2>
+          <p>Kesetaraan Gender</p>
+        </div>
+        <div class="sdgs-icon-content">
+          <div class="sdgs-icon-wrapper">
+            <img src="../img/sdg5.png" alt="SDG 5 Icon" />
+          </div>
+          <p class="sdgs-description">SDGs 5 bertujuan untuk mencapai kesetaraan gender dan memberdayakan semua
+            perempuan dan anak perempuan. Kesetaraan gender adalah hak asasi manusia.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="explore">
+      <h1>Mulai Belajar bersama <span>LentaraSetara!</span></h1>
+      <button><a href="./materi.html">Jelajahi Sekarang</a></button>
+    </section>
+  </main>
+  <footer>
+    <div class="left">
+      <img src="../img/logo.png" alt="logo" />
+      <div class="left-text">
+        <a href="./">Homepage</a>
+        <a href="./aboutUs.html">Tentang Kami</a>
+      </div>
+    </div>
+    <div class="right">
+      <div style="display: flex; gap: 1rem; justify-content: right">
+        <a href="https://www.instagram.com/alvito.aldi/?utm_source=ig_web_button_share_sheet">
+          <img src="../img/instagram.png" alt />
+        </a>
+        <a href="https://www.youtube.com/watch?v=MOZOtdeiaF0">
+          <img src="../img/youtube.png" alt />
+        </a>
+      </div>
+      <p>©2025 <span style="font-weight: 700">LentaraSetara</span></p>
+    </div>
+  </footer>
+</body>
+
 </html>

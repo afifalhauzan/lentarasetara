@@ -1,7 +1,7 @@
 footer {
-  background: var(--color-primary-100);
+  background: #f5f5f7;
   padding: 4rem 6rem;
-  padding-bottom: 3rem;
+  padding-bottom: 5rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -26,9 +26,15 @@ footer .left-text {
   flex-direction: column;
 }
 
-footer .left a,
-footer .right p {
+footer .left a {
   color: #1b417b;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+footer .right p {
+  color: #5e779c;
   text-decoration: none;
   font-size: 16px;
   font-weight: 600;
